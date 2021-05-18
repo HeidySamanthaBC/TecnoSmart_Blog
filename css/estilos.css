@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Open Sans',sans-serif;
+ 
+
+}
+.contenedor{
+    width: 90%;
+    max-width:1000px;
+    overflow: hidden;
+    margin:auto;
+    padding: 60px 0;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    color: #fff;
+}
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header{
+    height: 600px;
+    width: 100%;
+    background:-webkit-linear-gradient(120deg, rgba(167, 255, 199, 0.158) 0%, rgba(166, 217, 245, 0.137) 100%),url(../img/portada.jpg);
+    background:linear-gradient(120deg, rgba(167, 255, 199, 0.158) 0%, rgba(166, 217, 245, 0.137) 100%),url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.header2{
+    height: 80px;
+    width: 100%;
+    background:-webkit-linear-gradient(120deg, rgba(167, 255, 199, 0.158) 0%, rgba(166, 217, 245, 0.137) 100%),url(../img/portada.jpg);
+    background:linear-gradient(120deg, rgba(167, 255, 199, 0.158) 0%, rgba(166, 217, 245, 0.137) 100%),url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    font-size: 600%;
+    margin-bottom: 20px;
+}
+.copy{
+    font-weight: 200;
+    font-size: 20px;
+    margin-left:  7%; 
+    margin-bottom: 3%;   
+}
+/* Acerca de */
+.contenedormayor{
+    text-align:left;
+    margin-bottom: 3%;
+    height: 150px;
+}
+.contenedor-acercade{
+    margin-left: 3%;
+    margin-right: 5%;
+}
+.titulo{
+    font-size: 200%;
+    margin-bottom: 15px;
+    font-weight: 600;
+    margin-left: 3%;
+}
+/* Publicaciones */
+.publicacion-lista{
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.contenido{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.post-imagen1{
+    background: url(../img/Creative.jpg);
+    width: 105%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition:.2s;
+}
+.post-imagen2{
+    background: url(../img/IBM.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition:.2s;
+}
+.post-imagen3{
+    background: url(../img/bases.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition:.2s;
+}
+.post-imagen4{
+    background: url(../img/portadaiot.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition:.2s;
+}
+.post-imagen5{
+    background: url(../img/digital.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition:.2s;
+}
+.post-imagen6{
+    background: url(../img/avancesIA.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition:.2s;
+}
+.post{
+    box-shadow:0 1px 6px 1px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .2s;
+}
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+.post-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.post:hover .post-imagen1
+.post:hover .post-imagen2
+.post:hover .post-imagen3
+.post:hover .post-imagen4
+.post:hover .post-imagen5
+{
+    transform: scale(1.1);
+}
+.contenedor-creative img{
+    width: 100%;
+}
+.contenedor-computacion img{
+    width: 70%;
+    display: block;
+    margin:0 auto;
+    border-radius: 15px;
+    margin-top: 3%;   
+}
+.publicacion-body{
+    padding: 15px;
+    text-align: center;
+}
+.publicacion-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+.publicacion-body h2{
+    margin-bottom: 15px;
+}
+.publicacion-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.descripciones{
+    hyphens: auto;
+    margin-bottom: 3px;
+}
+.publicacion-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow:1px 2px 6px 1px rgba(0, 0, 0, .1);
+}
+.publicacion-body .post-link:hover{
+    background: #3378c7;
+    box-shadow:1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transform:translateY(-2px);
+}
+.texto{
+    font-weight: 100;
+    font-size: 20px;
+    margin-left:  3%; 
+    margin-bottom: 3%;
+}
+.subtitulo{
+    text-align: center;
+    font-weight: 600;
+    color:#2575fc;
+    font-size: 50px;
+}
+/* Galeria*/
+
+.galeria{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.img-galeria{
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 50%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.show{
+    transform: translate(0);
+}
+.showText{
+    transform: scale(1);
+}
+
+
+
+footer{
+    background:linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    padding-bottom:0.1px;  
+}
+.brand{
+    color:#fff;
+}
+.n-contacto{
+    color:#fff;
+    margin-bottom: 0%;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+/*Paginas de Ver mas*/
+.titulodeAux{
+    color: #2575fc;
+    margin: 3%;
+    font-size: 300%;
+}
+.articulos{
+    text-align:justify;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top:1%;
+    
+}
+.contenedorc{
+    margin: 3%;
+}
+.contenedor-cuantico img{
+    width: 190px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    border-radius: 5px;
+}
+
+.contenedor-comparacion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;  
+}
+
+.comparacion{
+     margin-bottom: 10px;
+}
+.n-comparar{
+    margin-bottom: 15px;
+    color:#2575fc;
+    margin-top: 4%;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    width: 30px;
+    height: 30px;
+    color:white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.contenedorb{
+    margin: 3%;
+}
+.contenedor-bases img{
+    width: 190px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 1px; 
+    border-radius: 5px;
+}
+.mysql{
+    font-size: 220%;
+    color:#2575fc;
+    margin-left: 3%;
+}
+.sub{
+    font-size: 180%;
+    color:#2575fc;
+    margin-left: 3%;
+}
+.contenedor-mysql img{
+    width: 30%;  
+    float: left;
+}
+h4{
+    margin-left: 3%;
+}
+
+
+@media screen and (max-width:800px){
+ .contenido{
+    grid-template-columns: repeat(2, 1fr);
+}
+ 
+.footer-content{
+    text-align: center;
+}
+.brand{
+    margin-bottom: 2%;
+}
+}
+@media screen and (max-width:620px){
+    h1{
+        font-size: 375%;
+       
+    }
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-content{
+    text-align: center;
+    }
+    .brand{
+    margin-bottom: 2%;
+    }
+}
+    
+    
+
+
